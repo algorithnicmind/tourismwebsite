@@ -1,165 +1,464 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odisha Tourism - Explore Arts and Culture</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odisha Tourism - Explore Arts & Culture</title>
+    <meta
+      name="description"
+      content="Discover the beauty of Odisha — ancient temples, pristine beaches, lush mountains, and vibrant culture. Plan your dream trip today."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <a href="#"><img src="images/logo.jpg" alt="Odisha Tourism Logo"></a>
-        </div>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#hotels">Hotels</a></li>
-                <li><a href="#activities">Activities</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header id="main-header">
+      <div class="logo">
+        <a href="#"><img src="images/logo.jpg" alt="Odisha Tourism Logo" /></a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#hotels">Hotels</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Odisha Tourism</h1>
-            <p>Discover amazing destinations and immerse yourself in the rich culture of Odisha.</p>
-            <a href="#destinations" class="hero-button">Explore Now</a>
-        </div>
-        <div class="hero-image">
-            <img src="images/hero.jpg" alt="Beautiful Odisha Scenery">
-        </div>
+      <div class="hero-image">
+        <img src="images/hero.jpg" alt="Beautiful Odisha Scenery" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-subtitle">✦ Experience the Soul of India</p>
+        <h1>Discover <span class="gradient-text">Odisha</span></h1>
+        <p class="hero-description">
+          Ancient temples, pristine beaches, lush mountains — immerse yourself
+          in the rich culture and breathtaking beauty of Odisha.
+        </p>
+        <a href="#destinations" class="hero-button">
+          Explore Destinations
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
     </section>
 
     <!-- Destinations Section -->
-    <section id="destinations" class="destinations">
+    <section id="destinations" class="destinations section-fade">
+      <div class="section-header">
+        <p class="section-tag">Where to Go</p>
         <h2>Popular Destinations</h2>
-        <div class="destination-grid">
-            <div class="destination-item">
-                <img src="images/destination-1.jpg" alt="Jagannath Temple, Puri">
-                <h3>Jagannath Temple, Puri</h3>
-                <p>The Jagannath Temple is a sacred Hindu site in Puri, famous for its Rath Yatra festival and dedicated to Lord Jagannath.</p>
-            </div>
-            <div class="destination-item">
-                <img src="images/destination-2.jpg" alt="Lingaraj Temple, Bhubaneswar">
-                <h3>Lingaraj Temple, Bhubaneswar</h3>
-                <p>One of the oldest temples dedicated to Lord Shiva, known for its exquisite Kalinga architecture and cultural heritage.</p>
-            </div>
-            <div class="destination-item">
-                <img src="images/destination-3.jpg" alt="Dhauli Giri, Bhubaneswar">
-                <h3>Dhauli Giri, Bhubaneswar</h3>
-                <p>A historic site where Emperor Ashoka embraced Buddhism, featuring the serene Shanti Stupa.</p>
-            </div>
+        <p class="section-subtitle">
+          Explore Odisha's most iconic landmarks and sacred sites
+        </p>
+      </div>
+      <div class="card-grid">
+        <div class="card" data-anim="fade-up">
+          <div class="card-image">
+            <img src="images/destination-1.jpg" alt="Jagannath Temple, Puri" />
+            <div class="card-badge">Sacred</div>
+          </div>
+          <div class="card-body">
+            <h3>Jagannath Temple, Puri</h3>
+            <p>
+              The Jagannath Temple is a sacred Hindu site in Puri, famous for
+              its Rath Yatra festival and dedicated to Lord Jagannath.
+            </p>
+          </div>
         </div>
+        <div class="card" data-anim="fade-up">
+          <div class="card-image">
+            <img
+              src="images/destination-2.jpg"
+              alt="Lingaraj Temple, Bhubaneswar"
+            />
+            <div class="card-badge">Heritage</div>
+          </div>
+          <div class="card-body">
+            <h3>Lingaraj Temple, Bhubaneswar</h3>
+            <p>
+              One of the oldest temples dedicated to Lord Shiva, known for its
+              exquisite Kalinga architecture and cultural heritage.
+            </p>
+          </div>
+        </div>
+        <div class="card" data-anim="fade-up">
+          <div class="card-image">
+            <img
+              src="images/destination-3.jpg"
+              alt="Dhauli Giri, Bhubaneswar"
+            />
+            <div class="card-badge">Historic</div>
+          </div>
+          <div class="card-body">
+            <h3>Dhauli Giri, Bhubaneswar</h3>
+            <p>
+              A historic site where Emperor Ashoka embraced Buddhism, featuring
+              the serene Shanti Stupa.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Hotels Section -->
-    <section id="hotels" class="hotels">
+    <section id="hotels" class="hotels section-fade">
+      <div class="section-header">
+        <p class="section-tag">Where to Stay</p>
         <h2>Featured Hotels</h2>
-        <div class="destination-grid">
-            <div class="destination-item">
-                <img src="images/hotel-1.jpg" alt="Swosti Premium">
-                <h3>Swosti Premium</h3>
-                <p>Known as one of the largest luxury hotels in Odisha, Swosti Premium boasts opulent interiors, multiple dining options, and a grand banquet hall, making it ideal for both business and leisure stays.</p>
-            </div>
-            <div class="destination-item">
-                <img src="images/hotel-2.jpg" alt="Mayfair">
-                <h3>Mayfair</h3>
-                <p>A luxurious 5-star property offering elegant rooms, fine dining, and world-class amenities. Its serene ambiance and lush gardens make it a perfect choice for travelers seeking comfort and luxury.</p>
-            </div>
-            <div class="destination-item">
-                <img src="images/hotel-3.jpg" alt="Sterling Resort">
-                <h3>Sterling Resorta</h3>
-                <p>Perfect for beach lovers, this resort offers cozy accommodations with stunning views of the Bay of Bengal. It's a great spot to enjoy Puri's coastal charm.</p>
-            </div>
+        <p class="section-subtitle">Handpicked stays for comfort and luxury</p>
+      </div>
+      <div class="card-grid">
+        <div class="card" data-anim="fade-up">
+          <div class="card-image">
+            <img src="images/hotel-1.jpg" alt="Swosti Premium" />
+            <div class="card-badge">★ Luxury</div>
+          </div>
+          <div class="card-body">
+            <h3>Swosti Premium</h3>
+            <p>
+              One of the largest luxury hotels in Odisha with opulent interiors,
+              multiple dining options, and a grand banquet hall.
+            </p>
+          </div>
         </div>
+        <div class="card" data-anim="fade-up">
+          <div class="card-image">
+            <img src="images/hotel-2.jpg" alt="Mayfair" />
+            <div class="card-badge">★ 5-Star</div>
+          </div>
+          <div class="card-body">
+            <h3>Mayfair</h3>
+            <p>
+              A luxurious 5-star property offering elegant rooms, fine dining,
+              and world-class amenities with lush gardens.
+            </p>
+          </div>
+        </div>
+        <div class="card" data-anim="fade-up">
+          <div class="card-image">
+            <img src="images/hotel-3.jpg" alt="Sterling Resort" />
+            <div class="card-badge">★ Resort</div>
+          </div>
+          <div class="card-body">
+            <h3>Sterling Resort</h3>
+            <p>
+              Perfect for beach lovers, this resort offers cozy accommodations
+              with stunning views of the Bay of Bengal.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Activities Section of odisha -->
-    <section id="activities" class="activities">
+    <!-- Activities Section -->
+    <section id="activities" class="activities section-fade">
+      <div class="section-header">
+        <p class="section-tag">What to Do</p>
         <h2>Featured Activities</h2>
-        <div class="destination-grid">
-            <div class="destination-item">
-                <img src="images/activity-1.jpg" alt="forest with mountains">
-                <h3>forest with mountains</h3>
-                <p>odishas most beatiful mountins with natural air</p>
-            </div>
-            <div class="destination-item">
-                <img src="images/activity-2.jpg" alt="Cultural Tours">
-                <h3>Cultural Tours</h3>
-                <p>Explore Odisha's rich heritage with guided tours to historical landmarks and temples.</p>
-            </div>
-            <div class="destination-item">
-                <img src="images/activity-3.jpg" alt="odishi dance">
-                <h3>odishi dance</h3>
-                <p>Discover the most oldest dance of odisha 
-                </p>
-            </div>
+        <p class="section-subtitle">
+          Unforgettable experiences waiting for you
+        </p>
+      </div>
+      <div class="card-grid">
+        <div class="card" data-anim="fade-up">
+          <div class="card-image">
+            <img src="images/activity-1.jpg" alt="Forest & Mountains" />
+          </div>
+          <div class="card-body">
+            <h3>Forest & Mountains</h3>
+            <p>
+              Odisha's most beautiful mountain trails surrounded by lush forests
+              and pristine natural air.
+            </p>
+          </div>
         </div>
+        <div class="card" data-anim="fade-up">
+          <div class="card-image">
+            <img src="images/activity-2.jpg" alt="Cultural Tours" />
+          </div>
+          <div class="card-body">
+            <h3>Cultural Tours</h3>
+            <p>
+              Explore Odisha's rich heritage with guided tours to historical
+              landmarks and ancient temples.
+            </p>
+          </div>
+        </div>
+        <div class="card" data-anim="fade-up">
+          <div class="card-image">
+            <img src="images/activity-3.jpg" alt="Odissi Dance" />
+          </div>
+          <div class="card-body">
+            <h3>Odissi Dance</h3>
+            <p>
+              Discover one of the oldest classical dance forms of India, born in
+              the temples of Odisha.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- About Section of our team-->
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>We are dedicated to showcasing the beauty and cultural richness of Odisha through personalized travel experiences.</p>
-        <div class="team-members">
-            <div class="team-member">
-                <img src="images/team-member-1.jpg" alt="Ankit Sahoo">
-                <h4>Ankit Sahoo</h4>
-                <p>Founder & CEO</p>
-            </div>
-            <div class="team-member">
-                <img src="images/team-member-2.jpg" alt="Basudev Maharana">
-                <h4>Basudev Maharana</h4>
-                <p>Head of Operations</p>
-            </div>
-            <div class="team-member">
-                <img src="images/team-member-3.jpg" alt="Ashutosh Mishra">
-                <h4>Ashutosh Mishra</h4>
-                <p>Marketing Director</p>
-            </div>
+    <!-- About Section -->
+    <section id="about" class="about section-fade">
+      <div class="section-header">
+        <p class="section-tag">Who We Are</p>
+        <h2>Meet the Team</h2>
+        <p class="section-subtitle">
+          Passionate about showcasing the beauty and cultural richness of Odisha
+        </p>
+      </div>
+      <div class="team-members">
+        <div class="team-member" data-anim="fade-up">
+          <div class="team-avatar">
+            <img src="images/team-member-1.jpg" alt="Ankit Sahoo" />
+          </div>
+          <h4>Ankit Sahoo</h4>
+          <p>Travel Enthusiast & Creator</p>
         </div>
+        <div class="team-member" data-anim="fade-up">
+          <div class="team-avatar">
+            <img src="images/team-member-2.jpg" alt="Basudev Maharana" />
+          </div>
+          <h4>Basudev Maharana</h4>
+          <p>Explorer & Storyteller</p>
+        </div>
+        <div class="team-member" data-anim="fade-up">
+          <div class="team-avatar">
+            <img src="images/team-member-3.jpg" alt="Ashutosh Mishra" />
+          </div>
+          <h4>Ashutosh Mishra</h4>
+          <p>Culture & Heritage Guide</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section for user -->
-    <section id="contact" class="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-fade">
+      <div class="section-header">
+        <p class="section-tag">Get in Touch</p>
         <h2>Contact Us</h2>
-    
-        <p>For inquiries or bookings, reach out through the form below or contact us directly.</p>
-        <ul>
-            <li></i># Main Str, cuttack</li>
-            <li><a href="mailto:ankitsahoo885@gmai.com">ankitsahoo885@gmail.com</a></li>
-            <li><a href="tel:666-123-7890">666-123-7890</a></li>
-        </ul>
+        <p class="section-subtitle">
+          Have questions or want to plan your trip? We'd love to hear from you.
+        </p>
+      </div>
 
-        <form class="form" action="#" method="POST">
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="Enter your full name" required>
+      <div class="contact-wrapper">
+        <div class="contact-info-box">
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <strong>Address</strong>
+              <p>Main Street, Cuttack, Odisha</p>
             </div>
-            <div class="form-group">
-                <label for="phone">Phone</label>
-                <input type="text" id="phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <p>
+                <a href="mailto:ankitsahoo885@gmail.com"
+                  >ankitsahoo885@gmail.com</a
+                >
+              </p>
             </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:666-123-7890">666-123-7890</a></p>
             </div>
-            <button type="submit"><h2>send message</h2></button>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Your full name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              id="phone"
+              placeholder="Your phone number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Your email address"
+              required
+            />
+          </div>
+          <button type="submit" id="submit-btn">
+            Send Message
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
         </form>
+      </div>
     </section>
+
+    <!-- Footer -->
     <footer>
-        <h5>Soical media to contants us</h5>
-        <a href="https://www.instagram.com/ankitsahoo94">instagram</a>
-        <a href="https://www.linkedin.com/feed/">linkedin</a>
-        <a href="https://github.com/algorithnicmind">github</a>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Odisha Tourism</h3>
+          <p>Discover the soul of India through the beauty of Odisha.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/ankitsahoo94"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              >Instagram</a
+            >
+            <a
+              href="https://www.linkedin.com/feed/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/algorithnicmind"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Odisha Tourism. Made with ❤️ by the team.</p>
+      </div>
     </footer>
-</body>
+
+    <script>
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+          // Close mobile menu
+          document.getElementById("nav-menu").classList.remove("active");
+          document.getElementById("nav-toggle").classList.remove("active");
+        });
+      });
+
+      // Mobile nav toggle
+      const navToggle = document.getElementById("nav-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        navToggle.classList.toggle("active");
+      });
+
+      // Header scroll effect
+      const header = document.getElementById("main-header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 60) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // Intersection Observer for fade-in animations
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px 0px -80px 0px",
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".section-fade, [data-anim]").forEach((el) => {
+        observer.observe(el);
+      });
+
+      // Contact form handler
+      const contactForm = document.getElementById("contact-form");
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const btn = document.getElementById("submit-btn");
+        btn.textContent = "✓ Message Sent!";
+        btn.style.background = "linear-gradient(135deg, #10b981, #059669)";
+        setTimeout(() => {
+          btn.innerHTML =
+            'Send Message <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>';
+          btn.style.background = "";
+          contactForm.reset();
+        }, 2500);
+      });
+    </script>
+  </body>
 </html>
